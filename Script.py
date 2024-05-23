@@ -1,10 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver import ActionChains
-import time
+from time import time
 import random
-
+import os
+import sys
+from termcolor import colored
 # Chemin vers le WebDriver
 driver_path = webdriver.Chrome()
 driver = (driver_path)
@@ -28,9 +29,9 @@ def test_login(email, password):
         
    # Vérifier si la connexion a réussi
         if "These credentials do not match our records." not in driver.page_source:
-            print(f"Successfully logged in with email: {email} and password: {password}")
+            print(colored(f"Successfully logged in with email: {email} and password: {password}",'green'))
         else:
-            print(f"Échec de la connexion pour {email}")
+            print(colored(f"Échec de la connexion pour {email}",'red'))
     except Exception as e:
         print(f"Une erreur est survenue pour {email}: {str(e)}") 
         
