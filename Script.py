@@ -3,9 +3,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 import random
-import os
-import sys
-import colorama
+from colorama import Fore ,Back ,Style
+from colorama import init
+init(autoreset=True)
 # Chemin vers le WebDriver
 driver_path = webdriver.Chrome()
 driver = (driver_path)
