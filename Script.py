@@ -29,9 +29,9 @@ def test_login(email, password):
         
    # Vérifier si la connexion a réussi
         if "These credentials do not match our records." not in driver.page_source:
-            print(colored(f"Successfully logged in with email: {email} and password: {password}",'green'))
+            print(Fore.GREEN + f"Successfully logged in with email: {email} and password: {password}")
         else:
-            print(colored(f"Échec de la connexion pour {email}",'red'))
+            print(Fore.RED + f"Échec de la connexion pour {email}")
     except Exception as e:
         print(f"Une erreur est survenue pour {email}: {str(e)}") 
         
