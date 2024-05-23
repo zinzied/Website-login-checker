@@ -40,6 +40,7 @@ def logout():
         # Find and click on the logout button
         logout_button = driver.find_element(By.XPATH, "//button[contains(text(),'LOGOUT')]")
         logout_button.click()
+        logout_button.send_keys(keys.RETURN)
         # Wait for the logout to complete
         time.sleep(2)
         # Check if logout is successful
