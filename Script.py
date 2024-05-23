@@ -5,7 +5,7 @@ import time
 import random
 import os
 import sys
-from termcolor import colored
+import colorama
 # Chemin vers le WebDriver
 driver_path = webdriver.Chrome()
 driver = (driver_path)
