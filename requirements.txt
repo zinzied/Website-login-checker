@@ -1,4 +1,2 @@
 selenium
-random
 colorama
-termcolor
