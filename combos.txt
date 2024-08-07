@@ -1,0 +1,3 @@
+here your combos username:password
+
+if you like to change to email:password change all "username" to "email" and fontions into Script.py
