@@ -1,4 +1,4 @@
-This code is a Python script designed to automate the process of testing login credentials on a specified website using Selenium WebDriver. Here's a detailed description suitable for a GitHub presentation:
+This code is a Python script designed to automate the process of testing login credentials on a specified website using Selenium WebDriver. Here's a detailed description presentation:
 
 ### Project Overview
 This project is a Selenium-based automation script for verifying login credentials on a website. It reads a list of username and password combinations from a file (`combos.txt`), attempts to log in to the website with each combination, and records the results.
