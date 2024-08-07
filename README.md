@@ -12,12 +12,12 @@ This project is a Selenium-based automation script for verifying login credentia
 ### How It Works
 1. **WebDriver Initialization**: The `create_driver` function sets up a headless Chrome WebDriver instance with necessary options.
 2. **Login Testing**: The `test_login` function navigates to the login page, enters the username and password, and checks if the login was successful by inspecting the page source.
-3. **Reading Combinations**: The script reads username and password combinations from `combos.txt`.
+3. **Reading Combinations**: The script reads username/email and password combinations from `combos.txt`.
 4. **Progress Management**: It reads previously checked combinations from `progress.txt` to avoid re-testing them.
 5. **Parallel Execution**: The script uses `ThreadPoolExecutor` to test login combinations concurrently, with a configurable number of worker threads.
 
 ### Files
-- **`combos.txt`**: Contains the list of username and password combinations to be tested.
+- **`combos.txt`**: Contains the list of username/email and password combinations to be tested.
 - **`progress.txt`**: Tracks the combinations that have already been tested.
 - **`successful_logins.txt`**: Stores the successful login credentials.
 
@@ -27,7 +27,7 @@ This project is a Selenium-based automation script for verifying login credentia
 - **concurrent.futures**: For parallel execution of login tests.
 
 ### Example Usage
-1. Place your username and password combinations in `combos.txt` in the format `username:password`.
+1. Place your username and password combinations in `combos.txt` in the format `username/email:password`.
 2. Run the script to start testing the login combinations.
 3. Check `successful_logins.txt` for any successful login credentials and `progress.txt` for the progress of tested combinations.
 
